@@ -68,7 +68,7 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li className={'navbar-menu'}>
-                                <a href={'/events'}>
+                                <a href={'/events'} aria-label={'JoinUs'}>
                                     Join Us
                                 </a>
                             </li>
