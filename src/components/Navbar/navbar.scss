@@ -6,11 +6,17 @@ a {
 header.navs {
   background-color: #fff;
   margin: 0;
-  position: sticky;
+  position: relative;
+  height: 71.6px;
+  //width: 100%;
+  z-index: 1000;
+  //border-bottom: 1px solid #dadce0;
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
   min-height: 25px;
   height: auto;
   padding-bottom: 0;

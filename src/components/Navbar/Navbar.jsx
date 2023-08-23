@@ -2,7 +2,8 @@
 import React, {useRef, useState} from 'react'
 import './navbar.scss'
 // import logo from '../../assets/gdsc_logo.svg'
-import gdsc_logo from "/DSC IIITV International Campus, Diu Light Horizontal-Logo.png"
+import gdsc_logo from '../../assets/DSC IIITV International Campus, Diu Light Horizontal-Logo.png'
+
 const Navbar = () => {
 
     const [isTeamMenuOpen, setTeamOpen] = useState(false)
@@ -21,7 +22,7 @@ const Navbar = () => {
                     <div className={'collapse navbar-collapse'} id={'main-nav'}>
                         <ul className={'navbar-right'}>
                             <li className={'navbar-menu'}>
-                                <a href={'/about'}>
+                                <a href={'/#about-us'} >
                                     About Us
                                 </a>
                             </li>
@@ -59,7 +60,7 @@ const Navbar = () => {
                                     </li>
                                     <li role={'presentation'}>
                                         <a role={'menu-item'} tabIndex={-1}
-                                           href={'/volunteer'}
+                                           href={'/volunteers'}
                                         >
                                             Volunteers
                                         </a>
