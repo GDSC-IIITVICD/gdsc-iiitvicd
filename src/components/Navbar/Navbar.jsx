@@ -2,8 +2,7 @@
 import React, {useRef, useState} from 'react'
 import './navbar.scss'
 // import logo from '../../assets/gdsc_logo.svg'
-import gdsc_logo from '../../assets/DSC IIITV International Campus, Diu Light Horizontal-Logo.png'
-
+import gdsc_logo from "/DSC IIITV International Campus, Diu Light Horizontal-Logo.png"
 const Navbar = () => {
 
     const [isTeamMenuOpen, setTeamOpen] = useState(false)
@@ -60,7 +59,7 @@ const Navbar = () => {
                                     </li>
                                     <li role={'presentation'}>
                                         <a role={'menu-item'} tabIndex={-1}
-                                           href={'/volunteers'}
+                                           href={'/volunteer'}
                                         >
                                             Volunteers
                                         </a>
