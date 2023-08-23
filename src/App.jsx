@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Alumni from "./components/Alumni";
-import Volunteer from "./components/Volunteer";
-import Leads from "./components/Leads";
+import Home from "./components/Home/Home";
+import Alumni from "./components/Alumni/Alumni";
+import Volunteer from "./components/Volunteer/Volunteer";
+import Leads from "./components/Leads/Leads";
 function App() {
   return (
     <>
