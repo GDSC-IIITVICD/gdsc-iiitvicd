@@ -9,7 +9,7 @@ function App() {
     <>
       <div>
         <BrowserRouter>
-          <Navbar/>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/leads" element={<Leads />} />

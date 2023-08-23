@@ -1,0 +1,131 @@
+.header-section {
+  position: relative;
+  z-index: 100;
+  height: calc(100vh - 71.6px);
+  width: 100%;
+  overflow-x: hidden;
+  transition: height 0.5s ease;
+
+  &.active {
+    height: 100%;
+  }
+}
+
+.brand {
+  position: relative;;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  a {
+    background-color: #2196F3;
+    padding: 15px 48px;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14),
+    0 3px 1px -2px rgba(0, 0, 0, .12),
+    0 1px 5px 0 rgba(0, 0, 0, .2);
+    transition: background-color .3s ease-in;
+    animation: color-change 6s infinite;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      scale: 1.05;
+      transition: 0.1s ease-in-out;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .14),
+      0 1px 7px 0 rgba(0, 0, 0, .12),
+      0 3px 1px -1px rgba(0, 0, 0, .2);
+    }
+  }
+}
+
+.animation_bg {
+  position: relative;
+  z-index: -1;
+}
+
+.about-us {
+  position: relative;
+  height: calc(100vh - 71.6px);
+  width: 100%;
+  //background-image: url('/about_us_background.png');
+  //background-position: 0%;
+  background-color: #f2f2f3;
+  z-index: 100;
+  //transition: height 0.5s ease;
+
+  &.active {
+    height: 100%;
+  }
+
+  &-inner {
+    //width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 10%;
+    //padding: 30px 0;
+  }
+
+  &-info {
+    margin: auto;
+
+    h1 {
+      font-size: 54px;
+      font-weight: 400;
+      line-height: 4rem;
+      margin: 0;
+    }
+
+    span {
+      font-size: 65px;
+      font-weight: 500;
+    }
+
+    p {
+      padding-right: 6%;
+      margin: 0;
+      text-align: justify;
+      line-height: 1.4;
+      font-size: 16px;
+      font-weight: 400;
+      white-space: normal;
+    }
+  }
+
+  img {
+    margin: auto;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: var(--google-blue);
+  }
+
+  25% {
+    background-color: var(--google-red);
+  }
+
+  50% {
+    background-color: var(--google-yello);
+  }
+
+  75% {
+    background-color: var(--google-green);
+  }
+}
