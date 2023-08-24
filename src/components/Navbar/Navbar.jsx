@@ -1,12 +1,25 @@
 // eslint-disable-next-line no-unused-vars
-import React, {useRef, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import './navbar.scss'
-// import logo from '../../assets/gdsc_logo.svg'
 import gdsc_logo from '../../assets/DSC IIITV International Campus, Diu Light Horizontal-Logo.png'
 
 const Navbar = () => {
 
     const [isTeamMenuOpen, setTeamOpen] = useState(false)
+
+    // useEffect(() => {
+    //     document.addEventListener('DOMContentLoaded', () => {
+    //
+    //         const dropdownButton = document.getElementsByClassName('dropdown-toggle')
+    //         const dropdownContent = document.getElementsByClassName('team-menu')
+    //         document.addEventListener('click', (event) => {
+    //             console.log(event.target)
+    //             if (!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+    //                 setTeamOpen(false)
+    //             }
+    //         })
+    //     });
+    // }, [])
 
 
     return (
@@ -22,12 +35,12 @@ const Navbar = () => {
                     <div className={'collapse navbar-collapse'} id={'main-nav'}>
                         <ul className={'navbar-right'}>
                             <li className={'navbar-menu'}>
-                                <a href={'/#about-us'} >
+                                <a href={'/#about-us'}>
                                     About Us
                                 </a>
                             </li>
                             <li className={'navbar-menu'}>
-                                <a href={'/events'}>
+                                <a href={'/#events'}>
                                     Events
                                 </a>
                             </li>

@@ -1,0 +1,146 @@
+.outer-card {
+  height: 27rem;
+  width: 17rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.person-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  overflow: hidden;
+  transition: color .2s ease-in;
+  //background-color: greenyellow;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--google-red);
+    transform: translateY(calc(100% - 4px));
+    transition: transform .2s ease-in;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: white;
+
+    &:before {
+      transform: translateY(0%);
+      border-radius: .5rem;
+    }
+
+    .links svg path {
+      fill: var(--grey-bg-color);
+    }
+
+    .profile-pic {
+      width: 100%;
+
+      img {
+        border-radius: 0;
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+}
+
+.profile-pic {
+  width: 70%;
+  height: 60%;
+  position: relative;
+  //padding: 20px;
+  //display: inline-block;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: .2s;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  img {
+    border: 3px solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: .2s;
+    width: 100%;
+    //transition: .;
+  }
+}
+
+.card-0 {
+  .person-card:before {
+    background-color: var(--google-red);
+  }
+
+  .profile-pic img {
+    border-color: var(--google-red);
+  }
+}
+
+.card-1 {
+  .person-card:before {
+    background-color: var(--google-blue);
+
+  }
+
+  .profile-pic img {
+    border-color: var(--google-blue);
+  }
+}
+
+.card-2 {
+  .person-card:before {
+    background-color: var(--google-green);
+  }
+
+  .profile-pic img {
+    border-color: var(--google-green);
+  }
+}
+
+.card-3 {
+  .person-card:before {
+    background-color: var(--google-yello);
+  }
+
+  .profile-pic img {
+    border-color: var(--google-yello);
+  }
+}
+
+
+.details {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+
+  a {
+    height: 100%;
+
+    svg path {
+      transition: fill .2s ease-in;
+    }
+  }
+}
