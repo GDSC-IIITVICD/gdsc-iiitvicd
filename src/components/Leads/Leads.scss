@@ -1,17 +1,37 @@
-.Leads{
-    width: 100%; 
+.Leads {
+  width: 100%;
 }
 
-.bg-image{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+.bg-leads-intro {
+  width: 100%;
+  height: 50vh;
+  background: #a3a3a3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    max-width: 50%;
+    text-align: center;
+  }
 }
 
-.bg-leads{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 10;
-    background: #fff;
+.bg-leads {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gdsc-lead{
+    display: flex;
+    justify-content: center;
+}
+
+.domain-leads {
+  display: flex;
+  justify-content: center;
+  gap: 7%;
+  row-gap: 4rem;
+  flex-wrap: wrap;
 }

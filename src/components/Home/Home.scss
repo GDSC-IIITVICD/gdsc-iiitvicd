@@ -40,6 +40,7 @@
     0 1px 5px 0 rgba(0, 0, 0, .2);
     transition: background-color .3s ease-in;
     animation: color-change 6s infinite;
+    //button reset after hover
     transition: 0.1s ease-in-out;
 
     &:hover {
