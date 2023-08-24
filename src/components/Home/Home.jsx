@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useEffect} from "react";
-import hero_logo from "../../assets/DSC IIITV International Campus, Diu Light Horizontal-Logo.png";
+import hero_logo from "/iiitvicd.svg";
 import ParticlesBackground from "./ParticlesBackground";
 import "./Home.scss"
 
@@ -34,7 +34,7 @@ const Home = () => {
         <>
             <div className={"header-section"}>
                 <div className={'brand'}>
-                    <img src={hero_logo} alt="GDSC IIITV-ICD"/>
+                        <img src={hero_logo} alt="GDSC IIITV-ICD"/>
                     <a>JOIN US</a>
                 </div>
                 <div className={"animation_bg"}><ParticlesBackground/></div>
@@ -53,7 +53,6 @@ const Home = () => {
                             community.
                         </p>
                     </div>
-                    {/*<div className={'about-us-image'}>*/}
                     <img src={'/about-image.svg'}/>
                 </div>
             </div>
