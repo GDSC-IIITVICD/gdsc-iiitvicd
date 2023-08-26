@@ -8,9 +8,7 @@ const PeopleCard = (props) => {
         <div className={`outer-card card-${props?.index}`}>
             <div className="person-card">
                 <div className={"profile-pic"}>
-                    {/*<div className={'profile-image'}>*/}
                         <img src={image||tempImg} alt="lead"/>
-                    {/*</div>*/}
                 </div>
                 <div className={"details"}>
                     <h2>{name}</h2>

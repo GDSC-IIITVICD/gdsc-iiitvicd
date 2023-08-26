@@ -19,3 +19,10 @@ body {
 h1, h2, h3, p {
     margin: 0;
 }
+
+button {
+    text-transform: none;
+    overflow: hidden;
+    outline: 0!important;
+    cursor: pointer;
+}
