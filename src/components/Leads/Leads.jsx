@@ -41,7 +41,6 @@ const Leads = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
