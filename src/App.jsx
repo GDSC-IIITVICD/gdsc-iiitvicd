@@ -1,12 +1,18 @@
-import Navbar from "./components/Navbar/Navbar";
+import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
-import Alumni from "./components/Alumni/Alumni";
-import Volunteer from "./components/Volunteer/Volunteer";
-import Leads from "./components/Leads/Leads";
+import Navbar from "./components/Navbar/Navbar";
+import Lottie from "lottie-react";
+import loadingdsc from "./loadinggdsc.json";
+
+// Lazily loaded components
+const Home = React.lazy(() => import("./components/Home/Home"));
+const Alumni = React.lazy(() => import("./components/Alumni/Alumni"));
+const Leads = React.lazy(() => import("./components/Leads/Leads"));
+const Volunteer = React.lazy(() => import("./components/Volunteer/Volunteer"));
+
 function App() {
   return (
-    <>
+    (
       <div>
         <BrowserRouter>
           <Navbar />
@@ -18,7 +24,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-    </>
+    )
   );
 }
 

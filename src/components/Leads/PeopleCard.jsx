@@ -1,7 +1,7 @@
 import React from "react";
 import "./PeopleCard.scss";
 import SvgLogo from "../SVG_Logos/SvgLogo.jsx";
-
+import tempImg from "/contact.jpeg"
 const PeopleCard = (props) => {
     const {image, name, domain, contact} = props;
     return (
@@ -9,7 +9,7 @@ const PeopleCard = (props) => {
             <div className="person-card">
                 <div className={"profile-pic"}>
                     {/*<div className={'profile-image'}>*/}
-                        <img src={'/leadsPhoto.jpg'} alt="lead"/>
+                        <img src={image||tempImg} alt="lead"/>
                     {/*</div>*/}
                 </div>
                 <div className={"details"}>
