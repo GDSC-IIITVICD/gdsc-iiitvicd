@@ -16,7 +16,7 @@
   align-items: center;
   z-index: 10;
   overflow: hidden;
-  transition: color .2s ease-in;
+  transition: color 0.2s ease-in;
   //background-color: greenyellow;
 
   &:before {
@@ -26,7 +26,7 @@
     width: 100%;
     background-color: var(--google-red);
     transform: translateY(calc(100% - 4px));
-    transition: transform .2s ease-in;
+    transition: transform 0.2s ease-in;
     z-index: -1;
   }
 
@@ -35,7 +35,7 @@
 
     &:before {
       transform: translateY(0%);
-      border-radius: .5rem;
+      border-radius: 0.5rem;
     }
 
     .links svg path {
@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  transition: .2s;
+  transition: 0.2s;
   //display: flex;
   //justify-content: center;
   //align-items: center;
@@ -71,7 +71,7 @@
     border: 3px solid;
     border-radius: 50%;
     display: inline-block;
-    transition: .2s;
+    transition: 0.2s;
     width: 100%;
     overflow: hidden;
     //transition: .;
@@ -91,7 +91,6 @@
 .card-1 {
   .person-card:before {
     background-color: var(--google-blue);
-
   }
 
   .profile-pic img {
@@ -119,7 +118,6 @@
   }
 }
 
-
 .details {
   width: 100%;
   height: 40%;
@@ -141,7 +139,7 @@
     height: 100%;
 
     svg path {
-      transition: fill .2s ease-in;
+      transition: fill 0.2s ease-in;
     }
   }
 }

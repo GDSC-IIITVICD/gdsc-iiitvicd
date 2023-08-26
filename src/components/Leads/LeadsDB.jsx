@@ -36,7 +36,10 @@ export const LeadsDB = [
     image: "",
     name: "Arkesh Chaudhary",
     domain: "Public Relations Co-Lead",
-    contact: { github: "/link", linkedin: "/link" },
+    contact: {
+      github: "https://github.com/arkeshchoudhury",
+      linkedin: "https://www.linkedin.com/in/arkesh-choudhury-a10a6a283/",
+    },
   },
   {
     image: "/HarshSharma.jpg",
