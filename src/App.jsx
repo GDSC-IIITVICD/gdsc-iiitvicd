@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Alumni from "./components/Alumni/Alumni";
 import Volunteer from "./components/Volunteer/Volunteer";
 import Leads from "./components/Leads/Leads";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
             <Route path="/alumni" element={<Alumni />} />
             <Route path="/volunteer" element={<Volunteer />} />
           </Routes>
+          <Footer/>
         </BrowserRouter>
       </div>
     </>

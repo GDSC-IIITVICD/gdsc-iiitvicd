@@ -1,0 +1,42 @@
+.footer{
+    position: relative;
+    height: max-content;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: #0000001a 0 0 5px, #0000001a 0 0 1px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+div{
+    display: block;
+}
+
+.get-in-touch {
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    color: #585757;
+    margin: 20px 0 20px -15px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.footer-heading {
+    font-size: 20px;
+    text-align: center;
+    color: #090909;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.footer-subheading, #footer-location {
+    text-align: center;
+}
+
+.social-logo{
+    margin-right:10px
+}
