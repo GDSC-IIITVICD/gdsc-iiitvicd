@@ -1,16 +1,14 @@
 import React from "react";
 import "./PeopleCard.scss";
 import SvgLogo from "../SVG_Logos/SvgLogo.jsx";
-
+import tempImg from "/contact.jpeg"
 const PeopleCard = (props) => {
     const {image, name, domain, contact} = props;
     return (
         <div className={`outer-card card-${props?.index}`}>
             <div className="person-card">
                 <div className={"profile-pic"}>
-                    {/*<div className={'profile-image'}>*/}
-                        <img src={'/leadsPhoto.jpg'} alt="lead"/>
-                    {/*</div>*/}
+                        <img src={image||tempImg} alt="lead"/>
                 </div>
                 <div className={"details"}>
                     <h2>{name}</h2>

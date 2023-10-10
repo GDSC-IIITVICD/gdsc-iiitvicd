@@ -2,11 +2,12 @@
 import React, {useEffect, useRef, useState} from 'react'
 import './navbar.scss'
 import gdsc_logo from '../../assets/DSC IIITV International Campus, Diu Light Horizontal-Logo.png'
+import SvgLogo from "../SVG_Logos/SvgLogo.jsx";
 
 const Navbar = () => {
 
     const [isTeamMenuOpen, setTeamOpen] = useState(false)
-
+    const [isMiniNavOpen, setMiniNav] = useState(false)
     // useEffect(() => {
     //     document.addEventListener('DOMContentLoaded', () => {
     //
@@ -24,15 +25,20 @@ const Navbar = () => {
 
     return (
         <header className={'navs'}>
-            <div className={'navbar'} role={'navigation'}>
+            <div className={'navbar navbar-secondary'} role={'navigation'}>
                 <div className={'container'}>
                     <div className={'navbar-left'}>
                         <a className={'navbar-brand'} href={'/'}>
-                            <img src={gdsc_logo} className={'svg'}
+                            <img src={'/GDSC_IIITVICD.svg'} className={'svg'}
                                  alt={'Google Developer Student Clubs IIITV-ICD logo'}/>
                         </a>
                     </div>
-                    <div className={'collapse navbar-collapse'} id={'main-nav'}>
+                    <button type={'button'} className={'navbar-toggle collapsed'}
+                            onClick={() => setMiniNav(prevState => !prevState)}
+                    >
+                        <SvgLogo name={isMiniNavOpen ?  'cross' :'ham' }/>
+                    </button>
+                    <div className={`collapse navbar-collapse ${isMiniNavOpen ? 'in' : ''}`} id={'main-nav'}>
                         <ul className={'navbar-right'}>
                             <li className={'navbar-menu'}>
                                 <a href={'/#about-us'}>
