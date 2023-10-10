@@ -3,7 +3,7 @@ import image_bg from "/LeadsBackground.png";
 import "./Leads.scss";
 import {LeadsDB} from "./LeadsDB";
 import PeopleCard from "./PeopleCard";
-import gdsc_lead_photo from "/leadsPhoto.png";
+import gdsc_lead_photo from "/LeadsPhotos/VedVekhande.jpeg";
 
 const Leads = () => {
     return (
@@ -41,7 +41,6 @@ const Leads = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
