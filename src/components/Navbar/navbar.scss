@@ -11,7 +11,7 @@ header.navs {
   //width: 100%;
   z-index: 1000;
   //border-bottom: 1px solid #dadce0;
-
+  
 }
 
 .navbar {
@@ -27,54 +27,17 @@ header.navs {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.navbar-toggle {
-  position: relative;
-  padding: 9px 10px;
-  margin-right: 20px;
-  margin-top: -4.5px;
-  margin-bottom: -4.5px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 0;
-  float: right;
-}
-
-.navbar-secondary {
-  .navbar-toggle {
-    padding-left: 5px;
-    margin-right: 0;
-    margin-top: 0;
-    padding-top: 0;
-    width: 22px;
-    overflow: hidden;
-    position: fixed;
-    top: 20px;
-    left: 15px;
-    z-index: 5;
-    transform: translateX(240px);
-
-    &.collapsed {
-      transform: translateX(0);
-      position: absolute;
-      //top: calc(50% - 8px);
-      animation: none;
-    }
-  }
-}
-
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  //width: 1170px;
+  width: 1170px;
   position: relative;
-  //display: flex;
-  //justify-content: space-between;
-  //min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
 }
-
 
 .navbar-left {
   display: flex;
@@ -106,21 +69,17 @@ header.navs {
 }
 
 .navbar-collapse {
-  display: flex;
-  padding-right: 20px;
-  padding-left: 20px;
-  overflow-x: visible;
-  border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-}
-
-.collapse {
-  display: none;
-
-  &.in {
-    display: block;
-  }
+  display: flex !important;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+  width: auto;
+  border-top: 0;
+  box-shadow: none;
 }
 
 #main-nav {
@@ -278,162 +237,6 @@ li.navbar-menu {
   box-shadow: none;
   right: -1px;
 }
-
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
-    height: 55px;
-
-  }
-
-  .navbar-brand img {
-    height: 60%;
-  }
-}
-
-@media (max-width: 991px) {
-  header.navs {
-    height: 55px;
-  }
-
-  .navbar-left {
-    margin-left: 50px;
-  }
-
-  .navbar-brand  {
-    margin-left: 0;
-  }
-  .navbar-brand {
-    max-width: 200px;
-    height: 55px;
-  }
-
-  header.navs .navbar.navbar-secondary .container a, .team-menu.dropdown-menu a {
-    font-size: 14px !important;
-    text-decoration: none;
-    font-weight: normal !important;
-    color: #5f6368 !important;
-  }
-
-  .navbar-collapse {
-    min-height: 100%;
-    height: 100%;
-    position: fixed;
-    width: 200px;
-    top: 0;
-    left: 0;
-    -webkit-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    transform: translateX(-300px);
-    margin: 0;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
-    background-color: #fff;
-
-    &.in {
-      overflow: initial;
-      transform: translateX(0);
-
-      .navbar-right {
-        float: none;
-        max-height: 100%;
-        overflow: auto;
-        padding: 42px 0 21px;
-        list-style: none;
-        flex-direction: column;
-        width: 100%;
-
-
-      }
-
-      .navbar-menu {
-        width: 100%;
-        justify-content: flex-start;
-        border-bottom: 1px solid #dadce0;
-
-        a {
-          padding: 20px 0;
-        }
-      }
-
-      .open {
-
-        flex-direction: column;
-        //border-bottom:  1px solid #dadce0;
-
-        a {
-          display: block;
-        }
-        .dropdown-menu {
-          position: static;
-          float: left;
-          width: auto;
-          //margin-top: 0;
-          background-color: transparent;
-          border: 0;
-          -webkit-box-shadow: none;
-          box-shadow: none;
-          margin: 0 !important;
-
-          &::before, &::after {
-            display: none;
-          }
-        }
-
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-toggle {
-    display: none;
-  }
-
-
-  .container {
-    width: calc(100% - 17px);
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .navbar-brand {
-    img {
-      height: 180%;
-    }
-  }
-
-  .navbar-collapse {
-    display: flex !important;
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 0;
-    padding-left: 0;
-    width: auto;
-    border-top: 0;
-    box-shadow: none;
-
-    &.collapse {
-      height: auto !important;
-      padding-bottom: 0;
-      overflow: visible !important;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-brand img {
-    height: 60%;
-  }
-}
-
 
 //.navbar-menu a[aria-label='JoinUs'] {
 //font-weight: 600;

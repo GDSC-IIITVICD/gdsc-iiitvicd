@@ -2,8 +2,8 @@ import React from "react";
 import image_bg from "/LeadsBackground.png";
 import "./Leads.scss";
 import {LeadsDB} from "./LeadsDB";
-import PeopleCard from "./PeopleCard";
-import gdsc_lead_photo from "/LeadsPhotos/VedVekhande.jpeg";
+import PeopleCard from "../PeopleCard/PeopleCard";
+import gdsc_lead_photo from "/leadsPhoto.png";
 
 const Leads = () => {
     return (
@@ -26,7 +26,7 @@ const Leads = () => {
                                 image={gdsc_lead_photo}
                                 name="Ved Vekhande"
                                 domain="GDSC Lead"
-                                contact={{github: '/link', linkedin: '/linkj'}}
+                                contact={{github: '/link', linkedin: '/link'}}
                                 index={0}
                             />
                         </div>
@@ -41,6 +41,7 @@ const Leads = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
