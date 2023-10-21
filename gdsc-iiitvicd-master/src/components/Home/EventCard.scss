@@ -1,0 +1,52 @@
+.outer-card-events {
+  height: 30rem;
+  width: 22rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  transition: 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    scale: 1.02;
+  }
+}
+
+.inner-card-events {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  .image-event {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 100%;
+    }
+  }
+  .details-event {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      font-size: 1.75rem;
+      padding: 0.25rem 0 0 0;
+      font-weight: 600;
+    }
+    .event-date {
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 0.2rem 0 0.25rem 0;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}

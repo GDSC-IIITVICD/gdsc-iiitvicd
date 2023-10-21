@@ -1,0 +1,21 @@
+:root {
+    --google-green : #0F9D58;
+    --google-yello : #F4B400;
+    --google-red : #DB4437;
+    --google-blue : #4285F4;
+    --grey-bg-color : #f2f2f3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
