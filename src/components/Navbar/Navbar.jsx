@@ -3,6 +3,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import './navbar.scss'
 import gdsc_logo from '../../assets/DSC IIITV International Campus, Diu Light Horizontal-Logo.png'
 import SvgLogo from "../SVG_Logos/SvgLogo.jsx";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -64,30 +65,30 @@ const Navbar = () => {
 
                                 <ul className={'team-menu dropdown-menu'} role={'menu'}>
                                     <li role={'presentation'}>
-                                        <a role={'menu-item'} tabIndex={-1}
-                                           href={'/leads'}
+                                        <Link role={'menu-item'} tabIndex={-1}
+                                           to={'/leads'}
                                         >
                                             Leads
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li role={'presentation'}>
-                                        <a role={'menu-item'} tabIndex={-1}
-                                           href={'/alumni'}
+                                        <Link role={'menu-item'} tabIndex={-1}
+                                           to={'/alumni'}
                                         >
                                             Alumni
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li role={'presentation'}>
-                                        <a role={'menu-item'} tabIndex={-1}
-                                           href={'/volunteers'}
+                                        <Link role={'menu-item'} tabIndex={-1}
+                                           to={'/volunteers'}
                                         >
                                             Volunteers
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className={'navbar-menu'}>
-                                <a href={'/events'} aria-label={'JoinUs'}>
+                                <a href={'https://gdsc.community.dev/indian-institute-of-information-technology-vadodara-international-campus-diu-diu/'} aria-label={'JoinUs'}>
                                     Join Us
                                 </a>
                             </li>
