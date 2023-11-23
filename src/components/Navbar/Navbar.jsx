@@ -88,7 +88,7 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li className={'navbar-menu'}>
-                                <a href={'/events'} aria-label={'JoinUs'}>
+                                <a href={'https://gdsc.community.dev/indian-institute-of-information-technology-vadodara-international-campus-diu-diu/'} aria-label={'JoinUs'}>
                                     Join Us
                                 </a>
                             </li>
