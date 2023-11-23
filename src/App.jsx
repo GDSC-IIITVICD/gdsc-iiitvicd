@@ -1,9 +1,6 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import Lottie from "lottie-react";
-import loadingdsc from "./loadinggdsc.json";
 import Home from "./components/Home/Home";
 import Alumni from "./components/Alumni/Alumni";
 import Volunteer from "./components/Volunteer/Volunteer";
@@ -13,7 +10,7 @@ function App() {
   return (
     (
       <div>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -22,7 +19,7 @@ function App() {
             <Route path="/volunteer" element={<Volunteer />} />
           </Routes>
           <Footer/>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     )
   );

@@ -3,6 +3,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import './navbar.scss'
 import gdsc_logo from '../../assets/DSC IIITV International Campus, Diu Light Horizontal-Logo.png'
 import SvgLogo from "../SVG_Logos/SvgLogo.jsx";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -64,25 +65,25 @@ const Navbar = () => {
 
                                 <ul className={'team-menu dropdown-menu'} role={'menu'}>
                                     <li role={'presentation'}>
-                                        <a role={'menu-item'} tabIndex={-1}
+                                        <Link role={'menu-item'} tabIndex={-1}
                                            href={'/leads'}
                                         >
                                             Leads
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li role={'presentation'}>
-                                        <a role={'menu-item'} tabIndex={-1}
+                                        <Link role={'menu-item'} tabIndex={-1}
                                            href={'/alumni'}
                                         >
                                             Alumni
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li role={'presentation'}>
-                                        <a role={'menu-item'} tabIndex={-1}
+                                        <Link role={'menu-item'} tabIndex={-1}
                                            href={'/volunteers'}
                                         >
                                             Volunteers
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
