@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Alumni from "./components/Alumni/Alumni";
@@ -10,16 +10,16 @@ function App() {
   return (
     (
       <div>
-        <HashRouter>
+        <BrowserRouter>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/leads" element={<Leads />} />
             <Route path="/alumni" element={<Alumni />} />
-            <Route path="/volunteer" element={<Volunteer />} />
+            <Route path="/volunteers" element={<Volunteer />} />
           </Routes>
           <Footer/>
-        </HashRouter>
+        </BrowserRouter>
       </div>
     )
   );

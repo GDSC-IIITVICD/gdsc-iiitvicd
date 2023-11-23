@@ -66,21 +66,21 @@ const Navbar = () => {
                                 <ul className={'team-menu dropdown-menu'} role={'menu'}>
                                     <li role={'presentation'}>
                                         <Link role={'menu-item'} tabIndex={-1}
-                                           href={'/leads'}
+                                           to={'/leads'}
                                         >
                                             Leads
                                         </Link>
                                     </li>
                                     <li role={'presentation'}>
                                         <Link role={'menu-item'} tabIndex={-1}
-                                           href={'/alumni'}
+                                           to={'/alumni'}
                                         >
                                             Alumni
                                         </Link>
                                     </li>
                                     <li role={'presentation'}>
                                         <Link role={'menu-item'} tabIndex={-1}
-                                           href={'/volunteers'}
+                                           to={'/volunteers'}
                                         >
                                             Volunteers
                                         </Link>

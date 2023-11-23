@@ -36,7 +36,7 @@ const Home = () => {
             <div className={"header-section"}>
                 <div className={"brand"}>
                     <img src={hero_logo} alt="GDSC IIITV-ICD"/>
-                    <a>JOIN US</a>
+                    <a href={"https://gdsc.community.dev/indian-institute-of-information-technology-vadodara-international-campus-diu-diu/"}>JOIN US</a>
                 </div>
                 <div className={"animation_bg"}>
                     <Suspense>
