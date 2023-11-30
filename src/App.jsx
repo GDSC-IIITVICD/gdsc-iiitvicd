@@ -8,20 +8,20 @@ import Leads from "./components/Leads/Leads";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
-    (
-      <div>
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
+    <div>
+      {/* nested routing - react outlet */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Home />} />
             <Route path="/leads" element={<Leads />} />
             <Route path="/alumni" element={<Alumni />} />
             <Route path="/volunteers" element={<Volunteer />} />
-          </Routes>
-          <Footer/>
-        </BrowserRouter>
-      </div>
-    )
+          </Route>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
