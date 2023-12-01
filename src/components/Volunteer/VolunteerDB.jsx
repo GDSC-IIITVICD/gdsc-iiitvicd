@@ -57,7 +57,7 @@ export const VolunteerDB = [
         image: "/volunteersPhotos/VedPrakashMeena.jpg",
         name: "Ved Prakash Meena",
         domain: "Public Relations Volunteer",
-        contact: { github: '/link', linkedin: '/link' }
+        contact: { github: 'https://github.com/Vedmeena21', linkedin: 'https://www.linkedin.com/in/ved-prakash-meena' }
     },
     {
         image: "/volunteersPhotos/TanayPatel.jpg",
